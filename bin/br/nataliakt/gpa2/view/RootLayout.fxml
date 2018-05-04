@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane minHeight="400.0" minWidth="350.0" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #EAEAeA;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.nataliakt.gpa2.view.RootLayoutController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Arquivo">
+            <items>
+                  <Menu mnemonicParsing="false" text="Abrir...">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#handleOpenDirectory" text="Pasta" />
+                    <MenuItem mnemonicParsing="false" onAction="#handleOpenFile" text="Arquivo" />
+                    </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#handleExit" text="Sair" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ajuda">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleHelp" text="Como Funciona?" />
+              <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="Sobre" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
